@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-12T16:16:44.595Z</updated>
+  <updated>2020-02-12T16:51:40.110Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo主题icarus配置和常见问题</title>
+    <link href="http://yoursite.com/2020/02/12/configuration_icarus/"/>
+    <id>http://yoursite.com/2020/02/12/configuration_icarus/</id>
+    <published>2020-02-12T16:41:52.000Z</published>
+    <updated>2020-02-12T16:51:40.110Z</updated>
+    
+    <content type="html"><![CDATA[<p>在搭建我的个人小站的过程中，遇到了许多问题哈。现在就对其进行一个梳理和记录：</p><a id="more"></a><h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><h1 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h1><h1 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h1><h2 id="添加valine评论系统后为何还是不成功"><a href="#添加valine评论系统后为何还是不成功" class="headerlink" title="添加valine评论系统后为何还是不成功"></a>添加valine评论系统后为何还是不成功</h2><p>在添加评论系统的过程中，除了在主题目录icarus下的文件_config.yml中修改comment的选项，还要注意在文章界面里的抬头不要加上 comment: true </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在搭建我的个人小站的过程中，遇到了许多问题哈。现在就对其进行一个梳理和记录：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Code Blocks - Blog" scheme="http://yoursite.com/categories/Code-Blocks-Blog/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+      <category term="Code" scheme="http://yoursite.com/tags/Code/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="icarus" scheme="http://yoursite.com/tags/icarus/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linéaire discriminant analyses</title>
     <link href="http://yoursite.com/2020/02/12/lda/"/>
     <id>http://yoursite.com/2020/02/12/lda/</id>
     <published>2020-02-12T11:39:21.000Z</published>
-    <updated>2020-02-12T16:16:44.595Z</updated>
+    <updated>2020-02-12T16:40:27.460Z</updated>
     
     <content type="html"><![CDATA[<p>C’est un article de test.</p><a id="more"></a><h1 id="Chapitre-1"><a href="#Chapitre-1" class="headerlink" title="Chapitre 1"></a>Chapitre 1</h1><h2 id="sub-title-1"><a href="#sub-title-1" class="headerlink" title="sub title 1"></a>sub title 1</h2><h1 id="Chapitre-2"><a href="#Chapitre-2" class="headerlink" title="Chapitre 2"></a>Chapitre 2</h1><h2 id="sub-title-1-1"><a href="#sub-title-1-1" class="headerlink" title="sub title 1"></a>sub title 1</h2><h1 id="Chapitre-3"><a href="#Chapitre-3" class="headerlink" title="Chapitre 3"></a>Chapitre 3</h1><h2 id="sub-title-1-2"><a href="#sub-title-1-2" class="headerlink" title="sub title 1"></a>sub title 1</h2><p>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.</p>]]></content>
     
