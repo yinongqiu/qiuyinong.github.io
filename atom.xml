@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-12T16:51:40.110Z</updated>
+  <updated>2020-02-12T17:55:26.475Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2020/02/12/configuration_icarus/"/>
     <id>http://yoursite.com/2020/02/12/configuration_icarus/</id>
     <published>2020-02-12T16:41:52.000Z</published>
-    <updated>2020-02-12T16:51:40.110Z</updated>
+    <updated>2020-02-12T17:55:26.475Z</updated>
     
-    <content type="html"><![CDATA[<p>在搭建我的个人小站的过程中，遇到了许多问题哈。现在就对其进行一个梳理和记录：</p><a id="more"></a><h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><h1 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h1><h1 id="Problems"><a href="#Problems" class="headerlink" title="Problems"></a>Problems</h1><h2 id="添加valine评论系统后为何还是不成功"><a href="#添加valine评论系统后为何还是不成功" class="headerlink" title="添加valine评论系统后为何还是不成功"></a>添加valine评论系统后为何还是不成功</h2><p>在添加评论系统的过程中，除了在主题目录icarus下的文件_config.yml中修改comment的选项，还要注意在文章界面里的抬头不要加上 comment: true </p>]]></content>
+    <content type="html"><![CDATA[<p>在搭建我的个人小站的过程中，遇到了许多问题哈。现在就对其进行一个梳理和记录：</p><a id="more"></a><h1 id="1-Installation"><a href="#1-Installation" class="headerlink" title="1. Installation"></a>1. Installation</h1><h1 id="2-Configuration"><a href="#2-Configuration" class="headerlink" title="2. Configuration"></a>2. Configuration</h1><h1 id="3-Problems"><a href="#3-Problems" class="headerlink" title="3. Problems"></a>3. Problems</h1><h2 id="3-1-添加valine评论系统后不成功"><a href="#3-1-添加valine评论系统后不成功" class="headerlink" title="3.1 添加valine评论系统后不成功"></a>3.1 添加valine评论系统后不成功</h2><p>在添加评论系统的过程中，除了在主题目录icarus下的文件_config.yml中修改comment的选项，还要注意在文章界面里的抬头不要加上 comment: true</p><h2 id="3-2-删除目录栏toc中的自动编号"><a href="#3-2-删除目录栏toc中的自动编号" class="headerlink" title="3.2 删除目录栏toc中的自动编号"></a>3.2 删除目录栏toc中的自动编号</h2><p>删除第6行代码</p><ul><li><font color=olive>themes/icarus/layout/widget/toc.ejs</font></li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"has-mr-6"</span>&gt;</span>$&#123;toc.index&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -32,7 +32,9 @@
     </summary>
     
     
-      <category term="Code Blocks - Blog" scheme="http://yoursite.com/categories/Code-Blocks-Blog/"/>
+      <category term="Code Blocks" scheme="http://yoursite.com/categories/Code-Blocks/"/>
+    
+      <category term="Blog" scheme="http://yoursite.com/categories/Code-Blocks/Blog/"/>
     
     
       <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
