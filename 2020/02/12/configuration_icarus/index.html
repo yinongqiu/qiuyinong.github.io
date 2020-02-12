@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-12T16:41:52.000Z">
-<meta property="article:modified_time" content="2020-02-12T21:16:16.726Z">
+<meta property="article:modified_time" content="2020-02-12T21:22:08.028Z">
 <meta property="article:author" content="Yinong QIU">
 <meta property="article:tag" content="Blog">
 <meta property="article:tag" content="Code">
@@ -153,7 +153,7 @@
             <div class="level-left">
 				<time class="level-item has-text-grey" datetime="2020-02-12T16:41:52.000Z"><i class="far fa-calendar-alt">&nbsp;</i>2020-02-12</time>
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-12T21:16:16.726Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-12</time>
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-12T21:22:08.028Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-12</time>
                 
                 
                 <div class="level-item">
@@ -236,8 +236,10 @@
 <h2 id="3-3-移动端不适配可能原因"><a href="#3-3-移动端不适配可能原因" class="headerlink" title="3.3 移动端不适配可能原因"></a>3.3 移动端不适配可能原因</h2><p>以下加入的新的代码一定不能有tab！！！用tab代码将无效，必须全部用空格代替！！这个bug折腾了太久脖子都算了！</p>
 <ul>
 <li><font color=olive>themes/icarus/source/css/style.styl</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.is-2-column .container</span><br><span class="line">	max-width: screen-desktop - 2 * gap</span><br><span class="line">	width: screen-desktop - 2 * gap</span><br><span class="line">+    .is-3-column .container</span><br><span class="line">+        max-width: screen-widescreen - gap</span><br><span class="line">+        width: screen-widescreen - gap</span><br><span class="line">@media screen and (min-width: screen-fullhd)</span><br><span class="line">+    .is-3-column .container</span><br><span class="line">+        max-width: screen-fullhd - 2 * gap</span><br><span class="line">+        width: screen-fullhd - 2 * gap</span><br><span class="line">.is-2-column .container</span><br><span class="line">	max-width: screen-widescreen - 2 * gap</span><br><span class="line">	width: screen-widescreen - 2 * gap</span><br></pre></td></tr></table></figure>
-<h2 id="3-4-界面排版格式莫名错乱"><a href="#3-4-界面排版格式莫名错乱" class="headerlink" title="3.4 界面排版格式莫名错乱"></a>3.4 界面排版格式莫名错乱</h2>不要什么都直接去格式里调！格式调好了有可能是文章出了问题！比如在文章里插入了代码或者是文字颜色，注意是否有漏书名号，或者是有balise没有关起来。这些都有可能造成排版布局错乱。</li>
+
+</li>
 </ul>
+<h2 id="3-4-界面排版格式莫名错乱"><a href="#3-4-界面排版格式莫名错乱" class="headerlink" title="3.4 界面排版格式莫名错乱"></a>3.4 界面排版格式莫名错乱</h2><p>不要什么都直接去格式里调！格式调好了有可能是文章出了问题！比如在文章里插入了代码或者是文字颜色，注意是否有漏书名号，或者是有balise没有关起来。这些都有可能造成排版布局错乱。</p>
 
         </div>
 		
