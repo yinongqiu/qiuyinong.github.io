@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-12T21:24:47.221Z</updated>
+  <updated>2020-02-13T10:54:56.883Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>create_domain</title>
+    <link href="http://yoursite.com/2020/02/13/create-domain/"/>
+    <id>http://yoursite.com/2020/02/13/create-domain/</id>
+    <published>2020-02-13T10:24:50.000Z</published>
+    <updated>2020-02-13T10:54:56.883Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录一下该博客在申请新域名的一些过程～</p><h1 id="1-上Godaddy购买域名"><a href="#1-上Godaddy购买域名" class="headerlink" title="1. 上Godaddy购买域名"></a>1. 上Godaddy购买域名</h1><p>一开始想说在腾讯云和阿里云上购买域名，后面发现好像因为这是在国内的厂商所以容易不稳定？总之后来选择来在Godaddy上购买域名。<br>挑来挑去最后还是选择了.com结尾的，我自己名字全称的已经被注册为某男装品牌？于是就换成了<a href="imqyn.com">imqyn.com</a>哈哈哈。</p><h1 id="2-Github加文件"><a href="#2-Github加文件" class="headerlink" title="2. Github加文件"></a>2. Github加文件</h1><p>之后可以手动在github仓库里的github page里更换custom domain，但是这样每次在用hexo g，和hexo d更新的时候就会覆盖掉这个设置，所以还是直接在博客目录里的source文件夹里添加CNAME文件，在里面输入自己买的域名就好啦！之后在通过hexo g，hexo d就能够在github里看到主目录底下的CNAME文件。</p><h1 id="3-DNSpod解析域名"><a href="#3-DNSpod解析域名" class="headerlink" title="3. DNSpod解析域名"></a>3. DNSpod解析域名</h1><p>这一步是解析域名，可以在DNSpod里解析也可以在腾讯云解析里解析。看大家都推荐在DNSpod里解析，但是我第一次在里面解析的时候发现总是没办法选中CNAME记录类型于是后来就到了腾讯云解析里解析了。我们主要要添加两个解析：<br><img src="images/create_domain/domain_analysis.png" alt="域名解析"></p><p>其中ip地址通过ping yourgihtubname.github.io 获得</p><h1 id="4-修改域名购买商Godaddy-DNS设置"><a href="#4-修改域名购买商Godaddy-DNS设置" class="headerlink" title="4. 修改域名购买商Godaddy DNS设置"></a>4. 修改域名购买商Godaddy DNS设置</h1><p><img src="images/create_domain/DNS.png" alt="修改DNS"><br>可以看到顶部有提示说让去域名购买商Godaddy处修改Nameservers<br>在还没DNSpod域名解析之前，Godaddy里有自己默认的Record和Nameservers，但是我们现在要将其替换为解析后的：<br><img src="images/create_domain/Godaddy.png" alt="Godaddy Nameservers"><br>这样就可以可以看到原来的Record将取消。</p><h1 id="5-成功啦"><a href="#5-成功啦" class="headerlink" title="5. 成功啦"></a>5. 成功啦</h1><p>一般等待一会儿就成功啦！可以上你自己的域名看看，也可以试试原来的地址，会发现原来的地址自动跳转到新的域名上了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;记录一下该博客在申请新域名的一些过程～&lt;/p&gt;
+&lt;h1 id=&quot;1-上Godaddy购买域名&quot;&gt;&lt;a href=&quot;#1-上Godaddy购买域名&quot; class=&quot;headerlink&quot; title=&quot;1. 上Godaddy购买域名&quot;&gt;&lt;/a&gt;1. 上Godaddy购买域名&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Code Blocks" scheme="http://yoursite.com/categories/Code-Blocks/"/>
+    
+      <category term="Blog" scheme="http://yoursite.com/categories/Code-Blocks/Blog/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+      <category term="Godaddy" scheme="http://yoursite.com/tags/Godaddy/"/>
+    
+      <category term="domain" scheme="http://yoursite.com/tags/domain/"/>
+    
+      <category term="DNSpod" scheme="http://yoursite.com/tags/DNSpod/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo主题icarus配置和常见问题</title>
