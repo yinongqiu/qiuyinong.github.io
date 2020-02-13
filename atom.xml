@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://imqyn.com/"/>
-  <updated>2020-02-13T12:24:22.956Z</updated>
+  <updated>2020-02-13T14:49:29.902Z</updated>
   <id>http://imqyn.com/</id>
   
   <author>
@@ -17,17 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>sitemap</title>
+    <title>Hexo博客加入百度和谷歌站点收录</title>
     <link href="http://imqyn.com/2020/02/13/sitemap/"/>
     <id>http://imqyn.com/2020/02/13/sitemap/</id>
     <published>2020-02-13T12:24:22.000Z</published>
-    <updated>2020-02-13T12:24:22.956Z</updated>
+    <updated>2020-02-13T14:49:29.902Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文记录了建站过程中所用到的网站</p><a id="more"></a><h1 id="1-站点地图生成"><a href="#1-站点地图生成" class="headerlink" title="1. 站点地图生成"></a>1. 站点地图生成</h1><h1 id="2-插入图片"><a href="#2-插入图片" class="headerlink" title="2. 插入图片"></a>2. 插入图片</h1><p>图床：微博图床（chrome）插件<br>简单方便，不需要注册七七八八的东西，只需要和微博绑定</p><h1 id="3-评论系统"><a href="#3-评论系统" class="headerlink" title="3. 评论系统"></a>3. 评论系统</h1><p>目前使用的为valine评论系统，因此链接到的为LeanCloud国际版后台</p><ul><li><a href="https://console.leancloud.app/applist.html#/apps">LeanCloud</a></li></ul><h1 id="4-提交百度谷歌收录"><a href="#4-提交百度谷歌收录" class="headerlink" title="4. 提交百度谷歌收录"></a>4. 提交百度谷歌收录</h1><ul><li><p><a href="https://ziyuan.baidu.com/property/index">百度站长平台</a><br>记得要在里面完善信息，备案号</p></li><li><p><a href="https://ziyuan.baidu.com/property/index">谷歌站长平台</a></p></li></ul>]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;本文记录了建站过程中所用到的网站&lt;/p&gt;
     
     </summary>
     
     
+      <category term="Code Blocks" scheme="http://imqyn.com/categories/Code-Blocks/"/>
+    
+      <category term="Blog" scheme="http://imqyn.com/categories/Code-Blocks/Blog/"/>
+    
+    
+      <category term="Blog" scheme="http://imqyn.com/tags/Blog/"/>
+    
+      <category term="sitemap" scheme="http://imqyn.com/tags/sitemap/"/>
     
   </entry>
   
@@ -90,33 +102,6 @@
       <category term="Hexo" scheme="http://imqyn.com/tags/Hexo/"/>
     
       <category term="icarus" scheme="http://imqyn.com/tags/icarus/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linéaire discriminant analyses</title>
-    <link href="http://imqyn.com/2020/02/12/lda/"/>
-    <id>http://imqyn.com/2020/02/12/lda/</id>
-    <published>2020-02-12T11:39:21.000Z</published>
-    <updated>2020-02-12T16:40:27.460Z</updated>
-    
-    <content type="html"><![CDATA[<p>C’est un article de test.</p><a id="more"></a><h1 id="Chapitre-1"><a href="#Chapitre-1" class="headerlink" title="Chapitre 1"></a>Chapitre 1</h1><h2 id="sub-title-1"><a href="#sub-title-1" class="headerlink" title="sub title 1"></a>sub title 1</h2><h1 id="Chapitre-2"><a href="#Chapitre-2" class="headerlink" title="Chapitre 2"></a>Chapitre 2</h1><h2 id="sub-title-1-1"><a href="#sub-title-1-1" class="headerlink" title="sub title 1"></a>sub title 1</h2><h1 id="Chapitre-3"><a href="#Chapitre-3" class="headerlink" title="Chapitre 3"></a>Chapitre 3</h1><h2 id="sub-title-1-2"><a href="#sub-title-1-2" class="headerlink" title="sub title 1"></a>sub title 1</h2><p>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.<br>C’est un article de test.</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;C’est un article de test.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Machine Learning" scheme="http://imqyn.com/categories/Machine-Learning/"/>
-    
-    
-      <category term="LDA" scheme="http://imqyn.com/tags/LDA/"/>
-    
-      <category term="Machine Learning" scheme="http://imqyn.com/tags/Machine-Learning/"/>
-    
-      <category term="SY19" scheme="http://imqyn.com/tags/SY19/"/>
     
   </entry>
   
