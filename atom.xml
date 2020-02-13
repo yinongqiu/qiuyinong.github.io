@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-13T11:44:49.012Z</updated>
+  <updated>2020-02-13T12:24:22.956Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sitemap</title>
+    <link href="http://yoursite.com/2020/02/13/sitemap/"/>
+    <id>http://yoursite.com/2020/02/13/sitemap/</id>
+    <published>2020-02-13T12:24:22.000Z</published>
+    <updated>2020-02-13T12:24:22.956Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo+Github Page+Godday+DNSpod(腾讯云)绑定域名</title>
