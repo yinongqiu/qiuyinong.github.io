@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://imqyn.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-14T11:05:29.127Z">
-<meta property="article:modified_time" content="2020-02-14T12:02:55.473Z">
+<meta property="article:modified_time" content="2020-02-14T12:11:37.015Z">
 <meta property="article:author" content="Yinong QIU">
 <meta property="article:tag" content="Blog">
 <meta property="article:tag" content="sitemap">
@@ -63,7 +63,15 @@
 <link rel="stylesheet" href="/css/back-to-top.css">
 
     
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158513451-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158513451-1');
+</script>
+
     
     <script>
 var _hmt = _hmt || [];
@@ -158,7 +166,7 @@ var _hmt = _hmt || [];
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-14T12:02:55.473Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-14</time>
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-14T12:11:37.015Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-14</time>
                 
                 
                 <div class="level-item">
@@ -216,7 +224,7 @@ var _hmt = _hmt || [];
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;remain&quot;:4999998,</span><br><span class="line">    &quot;success&quot;:2,</span><br><span class="line">    &quot;not_same_site&quot;:[],</span><br><span class="line">    &quot;not_valid&quot;:[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>success表示当天成功推送的url条数，remain表示当天剩余的可推送url条数，这两个域是必返回<br>而not_same_site表示由于不是本站url而未处理的url列表，not_valid表示不合法的url列表，这两个是非必选</p>
 <p>以上内容均可在百度站长平台里看到</p>
-<h2 id="3-4-自动推送"><a href="#3-4-自动推送" class="headerlink" title="3.4 自动推送"></a>3.4 自动推送</h2><p>看说明说是要在每个页面都加上这段代码，但是我不知道具体加在哪里，于是找到了一个scripts.ejs文件和footer.ejs文件。这两个文件在每个页面里应该都会加载的。<br>我先在一下两个文件中加入了百度自动提供的自动推送的代码：</p>
+<h2 id="3-2-自动推送"><a href="#3-2-自动推送" class="headerlink" title="3.2 自动推送"></a>3.2 自动推送</h2><p>看说明说是要在每个页面都加上这段代码，但是我不知道具体加在哪里，于是找到了一个scripts.ejs文件和footer.ejs文件。这两个文件在每个页面里应该都会加载的。<br>我先在一下两个文件中加入了百度自动提供的自动推送的代码：</p>
 <ul>
 <li><font color="olive">themes/icarus/layout/common/scripts.ejs</font></li>
 <li><font color="olive">themes/icarus/layout/common/footer.ejs</font></li>
@@ -224,7 +232,7 @@ var _hmt = _hmt || [];
 <p>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp &#x3D; document.createElement(&#39;script&#39;);</span><br><span class="line">    var curProtocol &#x3D; window.location.protocol.split(&#39;:&#39;)[0];</span><br><span class="line">    if (curProtocol &#x3D;&#x3D;&#x3D; &#39;https&#39;) &#123;</span><br><span class="line">        bp.src &#x3D; &#39;https:&#x2F;&#x2F;zz.bdstatic.com&#x2F;linksubmit&#x2F;push.js&#39;;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src &#x3D; &#39;http:&#x2F;&#x2F;push.zhanzhang.baidu.com&#x2F;push.js&#39;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s &#x3D; document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-5-sitemap推送"><a href="#3-5-sitemap推送" class="headerlink" title="3.5 sitemap推送"></a>3.5 sitemap推送</h2><p>最后在sitemap里加入yourdomain/baidusitemap.xml即可</p>
+<h2 id="3-3-sitemap推送"><a href="#3-3-sitemap推送" class="headerlink" title="3.3 sitemap推送"></a>3.3 sitemap推送</h2><p>最后在sitemap里加入yourdomain/baidusitemap.xml即可</p>
 <h1 id="4-Google谷歌网站站长"><a href="#4-Google谷歌网站站长" class="headerlink" title="4. Google谷歌网站站长"></a>4. Google谷歌网站站长</h1><p>登陆<a href="https://search.google.com/search-console?resource_id=http%3A%2F%2Fimqyn.com%2F">谷歌站长平台</a></p>
 <p>有引导，操作同上。注意search console里选右边的。</p>
 
@@ -522,13 +530,13 @@ var _hmt = _hmt || [];
       
         <span>3.3.4 提交状态</span>
         </a></li></ul></li><li>
-        <a class="is-flex" href="#3-4-自动推送">
+        <a class="is-flex" href="#3-2-自动推送">
       
-        <span>3.4 自动推送</span>
+        <span>3.2 自动推送</span>
         </a></li><li>
-        <a class="is-flex" href="#3-5-sitemap推送">
+        <a class="is-flex" href="#3-3-sitemap推送">
       
-        <span>3.5 sitemap推送</span>
+        <span>3.3 sitemap推送</span>
         </a></li></ul></li><li>
         <a class="is-flex" href="#4-Google谷歌网站站长">
       
@@ -741,35 +749,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    <div class="searchbox ins-search">
-    <div class="searchbox-container ins-search-container">
+    <link rel="stylesheet" href="/css/search.css">
+<div class="searchbox google-cse-search">
+    <div class="searchbox-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
-            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+            <input type="text" class="searchbox-input" placeholder="Type something..." />
+            <span class="searchbox-close searchbox-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
-        <div class="searchbox-result-wrapper ins-section-wrapper">
-            <div class="ins-section-container"></div>
+        
+        <div class="searchbox-result-wrapper">
+            <gcse:searchresults-only></gcse:searchresults-only>
         </div>
+        
     </div>
+    
+    <script>
+        (function() {
+            var cx = '002832907841243802622:vl6sctj46we';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    
 </div>
 <script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
-            },
-            CONTENT_URL: '/content.json',
+    (function (document, $) {
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
         };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
+
+        $(document).on('click', '.navbar-main .search', function () {
+            $('.searchbox').toggleClass('show');
+        }).on('click', '.searchbox .searchbox-mask', function () {
+            $('.searchbox').removeClass('show');
+        }).on('click', '.searchbox-close', function () {
+            $('.searchbox').removeClass('show');
+        }).on('keydown', '.searchbox-input', debounce(function () {
+            var value = $(this).val();
+            try {
+                var element = google.search.cse.element.getElement('searchresults-only0');
+                if (value.trim() === '') {
+                    element.clearAllResults();
+                } else {
+                    element.execute(value);
+                }
+            } catch (e) {}
+        }, 300));
+    })(document, jQuery);
 </script>
-<script src="/js/insight.js" defer></script>
-<link rel="stylesheet" href="/css/search.css">
-<link rel="stylesheet" href="/css/insight.css">
     
 </body>
 </html>

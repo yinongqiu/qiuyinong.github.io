@@ -57,7 +57,15 @@
 <link rel="stylesheet" href="/css/back-to-top.css">
 
     
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158513451-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158513451-1');
+</script>
+
     
     <script>
 var _hmt = _hmt || [];
@@ -159,7 +167,7 @@ var _hmt = _hmt || [];
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-14T12:02:55.473Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-14</time>
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-14T12:11:37.015Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-14</time>
                 
                 
                 <div class="level-item">
@@ -225,7 +233,7 @@ var _hmt = _hmt || [];
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-14T12:07:11.340Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-14</time>
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2020-02-14T12:20:43.480Z"><i class="far fa-calendar-check">&nbsp;</i>2020-02-14</time>
                 
                 
                 <div class="level-item">
@@ -236,7 +244,7 @@ var _hmt = _hmt || [];
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 200 words)
+                    a minute read (About 199 words)
                 </span>
                 
                 
@@ -1182,35 +1190,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    <div class="searchbox ins-search">
-    <div class="searchbox-container ins-search-container">
+    <link rel="stylesheet" href="/css/search.css">
+<div class="searchbox google-cse-search">
+    <div class="searchbox-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
-            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+            <input type="text" class="searchbox-input" placeholder="Type something..." />
+            <span class="searchbox-close searchbox-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
-        <div class="searchbox-result-wrapper ins-section-wrapper">
-            <div class="ins-section-container"></div>
+        
+        <div class="searchbox-result-wrapper">
+            <gcse:searchresults-only></gcse:searchresults-only>
         </div>
+        
     </div>
+    
+    <script>
+        (function() {
+            var cx = '002832907841243802622:vl6sctj46we';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    
 </div>
 <script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
-            },
-            CONTENT_URL: '/content.json',
+    (function (document, $) {
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
         };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
+
+        $(document).on('click', '.navbar-main .search', function () {
+            $('.searchbox').toggleClass('show');
+        }).on('click', '.searchbox .searchbox-mask', function () {
+            $('.searchbox').removeClass('show');
+        }).on('click', '.searchbox-close', function () {
+            $('.searchbox').removeClass('show');
+        }).on('keydown', '.searchbox-input', debounce(function () {
+            var value = $(this).val();
+            try {
+                var element = google.search.cse.element.getElement('searchresults-only0');
+                if (value.trim() === '') {
+                    element.clearAllResults();
+                } else {
+                    element.execute(value);
+                }
+            } catch (e) {}
+        }, 300));
+    })(document, jQuery);
 </script>
-<script src="/js/insight.js" defer></script>
-<link rel="stylesheet" href="/css/search.css">
-<link rel="stylesheet" href="/css/insight.css">
     
 </body>
 </html>
