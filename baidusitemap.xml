@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://imqyn.com/2020/02/13/site_used/</loc>
+    <loc>https://imqyn.com/2020/02/14/ssh/</loc>
     <lastmod>2020-02-14</lastmod>
   </url>  <url>
-    <loc>http://imqyn.com/2020/02/14/sitemap/</loc>
+    <loc>https://imqyn.com/2020/02/13/site_used/</loc>
     <lastmod>2020-02-14</lastmod>
   </url>  <url>
-    <loc>http://imqyn.com/2020/02/12/configuration_icarus/</loc>
+    <loc>https://imqyn.com/2020/02/14/sitemap/</loc>
     <lastmod>2020-02-14</lastmod>
   </url>  <url>
-    <loc>http://imqyn.com/2020/02/13/create_domain/</loc>
+    <loc>https://imqyn.com/2020/02/12/configuration_icarus/</loc>
+    <lastmod>2020-02-14</lastmod>
+  </url>  <url>
+    <loc>https://imqyn.com/2020/02/13/create_domain/</loc>
     <lastmod>2020-02-13</lastmod>
   </url>
 </urlset>

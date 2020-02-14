@@ -1,4 +1,5 @@
-http://imqyn.com/2020/02/14/sitemap/
-http://imqyn.com/2020/02/13/site_used/
-http://imqyn.com/2020/02/13/create_domain/
-http://imqyn.com/2020/02/12/configuration_icarus/
+https://imqyn.com/2020/02/14/ssh/
+https://imqyn.com/2020/02/14/sitemap/
+https://imqyn.com/2020/02/13/site_used/
+https://imqyn.com/2020/02/13/create_domain/
+https://imqyn.com/2020/02/12/configuration_icarus/
